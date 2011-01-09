@@ -1,0 +1,5 @@
+var offset = $("#logo").offset();
+$("#logo").css({
+  top: parseInt(offset.top) + 50
+});
+

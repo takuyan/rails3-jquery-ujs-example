@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
 
+gem 'sass'
+
 gem 'rspec'
 gem 'rspec-rails'
 

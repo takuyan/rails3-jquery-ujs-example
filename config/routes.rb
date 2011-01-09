@@ -1,4 +1,12 @@
 Rails3JqueryUjsExample::Application.routes.draw do
+
+  root :to => "main#index"
+
+  match "up" => "main#up", :as => :up 
+  match "down" => "main#down", :as => :down
+  match "left" => "main#left", :as => :left
+  match "right" => "main#right", :as => :right
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

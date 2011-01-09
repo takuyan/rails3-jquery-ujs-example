@@ -49,7 +49,7 @@ jQuery(function ($) {
                         dataType: dataType,
                         type: method.toUpperCase(),
                         beforeSend: function (xhr) {
-                            if ($this.triggerHandler('ajax:beforeSend') === false) {
+                            if (el.triggerAndReturn('ajax:beforeSend') === false) {
                               return false;
                             }
                            // if user has used jQuery.ajaxSetup then call beforeSend callback
@@ -139,7 +139,7 @@ jQuery(function ($) {
         });
     };
 
-    $(disable_with_form_remote_selector).live('ajax:before.rails', disable_with_input_function);
+    $(disable_with_form_remote_selector).live('ajax:beforeSend.rails', disable_with_input_function);
     $(disable_with_form_not_remote_selector).live('submit.rails', disable_with_input_function);
 
     $(disable_with_form_remote_selector).live('ajax:complete.rails', function () {

@@ -1,0 +1,45 @@
+body {
+  position: relative;
+  background: white;
+  color: #333333;
+  font: 13px/1.231 "Lucida Grande", Verdana, Arial, "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", sans-serif; }
+  body a {
+    color: white;
+    background: white; }
+  body #wrapper {
+    margin: 0 auto;
+    width: 980px;
+    height: 100%; }
+    body #wrapper #header {
+      position: relative;
+      height: 100px; }
+      body #wrapper #header #up, body #wrapper #header #down, body #wrapper #header #left, body #wrapper #header #right {
+        position: absolute; }
+      body #wrapper #header #up {
+        top: 0;
+        left: 25px; }
+      body #wrapper #header #down {
+        top: 50px;
+        left: 25px; }
+      body #wrapper #header #left {
+        top: 25px;
+        left: 0; }
+      body #wrapper #header #right {
+        top: 25px;
+        left: 50px; }
+    body #wrapper #container {
+      position: relative; }
+    body #wrapper #logo {
+      position: absolute;
+      top: 10px;
+      left: 0; }
+  body #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 2000px;
+    background: black;
+    opacity: 0.6; }

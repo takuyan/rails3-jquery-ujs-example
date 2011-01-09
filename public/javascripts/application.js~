@@ -14,7 +14,5 @@ $(function(){
   $(".move")
     .live("ajax:beforeSend", function(){ show_overlay(); })
     .live("ajax:complete", function(){ hide_overlay(); });
-
-  $("#logo").draggable();
 });
 

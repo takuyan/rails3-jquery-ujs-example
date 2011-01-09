@@ -13,6 +13,7 @@ gem 'haml'
 gem 'haml-rails'
 
 gem 'rspec'
+gem 'rspec-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

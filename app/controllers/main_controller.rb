@@ -1,7 +1,5 @@
 class MainController < ApplicationController
 
-  before_filter :get_time, :except => [:index]
-
   def index
   end
 
@@ -16,11 +14,5 @@ class MainController < ApplicationController
 
   def right 
   end
-
-  private 
-    
-    def get_time 
-      @time = Time.now
-    end
 
 end

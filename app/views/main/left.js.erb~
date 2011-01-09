@@ -1,5 +1,0 @@
-var offset = $("#logo").offset();
-$("#logo").css({
-  left: offset.left - 50
-});
-
